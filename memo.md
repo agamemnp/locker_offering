@@ -50,7 +50,7 @@ Based on the provided pricing structures and service components, we invite you t
 | **Zone_0**| €0.45  | €0.75  | €1.25  |
 | **Zone_1**| €0.75  | €0.45  | €1.25  |
 | **Zone_2**| €1.25  | €1.25  | €1.55  |
-
+(dowload zonemap.html for details)
 ---
 
 ### Table 3: Locker Slot Size Charge
@@ -67,7 +67,7 @@ Based on the provided pricing structures and service components, we invite you t
 |-----------------------------|---------------------|-------------------------|
 | SLC                         | 1-5                | Cluster Level 2        |
 | ELC                         | 0-1                | Cluster Level 1        |
-
+(dowload locker_map.html to see locker clusters)
 
 ## 3. Pilot Proposal Details
 
@@ -167,9 +167,9 @@ Thus, the combined cost for a delivery using LHWH, SLC, and LSC is **€1.37**.
 ---
 
 
-## 9. Dynamic Pricing Locker Pricing (DLC) Option
+## 9. Dynamic Pricing Locker Pricing (DLC) Option (future work..)
 
-SLC could also be offered as DLC (Dynamic Pricing Locker Pricing). In this option, we can set a dynamic price range from **€0.30 to €1.40**. Our API will outline the locker slots available at the specified price and automatically reject orders that exceed the upper limit, ensuring that only the desired pricing options are offered.
+SLC could also be offered as DLC (Dynamic Pricing Locker Pricing). In this option, we can set a dynamic price range from (example: **€0.60 to €1.40**). Our API will outline the locker slots available at the specified price and automatically reject orders that exceed the upper limit set, ensuring that only the desired pricing options are offered.
 
 ---
 
