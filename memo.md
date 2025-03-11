@@ -50,6 +50,8 @@ Based on the provided pricing structures and service components, we invite you t
 | **Zone_0**| €0.45  | €0.75  | €1.25  |
 | **Zone_1**| €0.75  | €0.45  | €1.25  |
 | **Zone_2**| €1.25  | €1.25  | €1.55  |
+
+---
 (dowload zonemap.html for details)
 ---
 
@@ -67,7 +69,10 @@ Based on the provided pricing structures and service components, we invite you t
 |-----------------------------|---------------------|-------------------------|
 | SLC                         | 1-5                | Cluster Level 2        |
 | ELC                         | 0-1                | Cluster Level 1        |
+
+---
 (dowload locker_map.html to see locker clusters)
+
 
 ## 3. Pilot Proposal Details
 
@@ -111,7 +116,6 @@ This documentation provides a comprehensive guide for developers to integrate wi
 - **Request Parameters:** A breakdown of required parameters for API calls.
 - **Response Formats:** Sample responses and error handling to aid in development.
 - **Usage Guidelines:** Best practices and code examples for seamless integration.
-Below is the updated proposal document with Sections 9 and 10 added. (Sections 1–8 remain unchanged.)
 ---
 
 ## 5. Invoicing and Pricing Calculation
