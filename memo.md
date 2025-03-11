@@ -69,8 +69,6 @@ Based on the provided pricing structures and service components, we invite you t
 | ELC                         | 0-1                | Cluster Level 1        |
 
 
-Let me know if you need any modifications! 🚀
-
 ## 3. Pilot Proposal Details
 
 ### Service Flow
