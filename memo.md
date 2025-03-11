@@ -13,6 +13,8 @@ Based on the provided pricing structures and service components, we invite you t
 
 ### Component Table
 
+Final price per shipment can be calcuted by adding the following components:
+
 | Component Code | Component Name                      | Dependency         | Description                                                                                                                                                       | Pricing   | Offer                                          |
 |----------------|-------------------------------------|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|------------------------------------------------|
 | PC             | Pickup Cost                         | Pickup Density     | Charge per voucher per order based on pickup effort                                                                                                               | Table 1   | N/A                                            |
@@ -22,24 +24,21 @@ Based on the provided pricing structures and service components, we invite you t
 | LSC            | Locker Slot Size Charge             | –                  | Extra cost for the smallest available locker slot                                                                                                                 | Table 3   | ✔️                                             |
 | EHC            | Express Home Delivery               | –                  | Express home delivery service                                                                                                                                       | N/A     | N/A                                            |
 | SHC            | Standard Home Delivery Service      | –                  | Standard home delivery service                                                                                                                                      | N/A     | N/A                                            |
-| HSC            | Home Parcel Size Charge             | –                  | 0€ up to 3kg; €0.80 per extra kg beyond 3kg                                                                                                                         | N/A | N/A                                   |
+| HSC            | Home Parcel Size Charge             | –                  | N/A                                                                                                                        | N/A | N/A                                   |
 | RC             | Remote Charge                       | –                  | Extra charge for remote delivery                                                                                                                                    | N/A   | N/A                                            |
 | CC             | COD Charge                          | –                  | Extra charge for Cash on Delivery (COD)                                                                                                                             | N/A     | N/A                                            |
 | SC             | Customer Support & Messaging Charge | –                  | Charge for phone support and transactional SMS                                                                                                                    | €0.10     | ✔️                                           |
 
 ---
 
-### Table 1: Pickup Cost & Locker Drop-off Charges
+### Table 1: Pickup Cost
 
 | Charge Description       | Charge in EUR |
 |--------------------------|---------------|
 | Locker Drop-off          | €0.10         |
 | Hub Injection            | €0.00         |
 | > 25 pickups/Stop        | €0.00         |
-| >= 10 pickups/Stop       | €0.30         |
-| >= 5 pickups/Stop        | €0.60         |
-| <= 4 pickups/Stop        | €1.30         |
-
+| <= 25 pickups/Stop       | €0.50         |
 ---
 
 ### Table 2: Network Cost by Zone
@@ -54,7 +53,7 @@ Based on the provided pricing structures and service components, we invite you t
 (dowload zonemap.html for details)
 ---
 
-### Table 3: Locker Slot Size Charge
+### Table 3: Locker Slot Size (extra) Charge
 
 | Slot Size | Charge in EUR |
 |-----------|---------------|
@@ -68,8 +67,10 @@ Based on the provided pricing structures and service components, we invite you t
 |-----------------------------|---------------------|-------------------------|
 | SLC                         | 1-5                | Cluster Level 2        |
 | ELC                         | 0-1                | Cluster Level 1        |
-
 ---
+
+Shipment will be place to closest (from  (most desired) selection available slot within the relvant cluster_level)
+
 (dowload locker_map.html to see locker clusters)
 
 
