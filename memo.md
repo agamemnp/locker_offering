@@ -1,8 +1,11 @@
+Below is the updated proposal document with the new Section 8 added:
+
+---
+
 # Pilot Proposal: Athens Hub Injection to Athens Lockers
 
 ## 1. Overview
-
-Based on the provided pricing structures and service components, we propose a pilot project to route parcels from the Athens hub (hub injection) directly to Athens lockers. This initiative will help us validate both the operational efficiency and technical integration of locker-based delivery while ensuring cost-effectiveness and a seamless customer experience.
+Based on the provided pricing structures and service components, we invite you to join our pilot project, where parcels will be routed from our Athens hub directly to Athens lockers. This initiative is designed to validate the operational efficiency and technical integration of our locker-based delivery system, ensuring both cost-effectiveness and a seamless customer experience. In Greece’s fiercely competitive courier industry—where the race to the bottom is a constant challenge—we recognize that optimizing expensive last-mile operations in key markets like Athens and Thessaloniki is critical. That’s why we are opening our extensive Locker network for your use, paving the way for a collaborative, innovative, and sustainable solution that sets a new industry benchmark.
 
 ---
 
@@ -59,6 +62,14 @@ Based on the provided pricing structures and service components, we propose a pi
 | L         | €0.40         |
 
 ---
+### Table 4: Standard Vs Express Locker Offering
+| Service Level Category (SLC) | SLA (Business Days) | Geographical Flexibility |
+|-----------------------------|---------------------|-------------------------|
+| SLC                         | 1-5                | Cluster Level 2        |
+| ELC                         | 0-1                | Cluster Level 1        |
+
+
+Let me know if you need any modifications! 🚀
 
 ## 3. Pilot Proposal Details
 
@@ -92,6 +103,17 @@ Based on the provided pricing structures and service components, we propose a pi
   - Real-time tracking will be facilitated via API calls and web hook notifications.
   - Current locker availability and an interactive locker map can be accessed via the provided link.
 
+Technical implementations for the integration are detailed in the REST API documentation available at:  
+[https://sp.skroutzlastmile.gr/restapidoc.html](https://sp.skroutzlastmile.gr/restapidoc.html)
+
+**Summary of Contents:**  
+This documentation provides a comprehensive guide for developers to integrate with the last mile delivery service. It covers:
+- **Endpoints:** Details on API endpoints for order creation, tracking, and status updates.
+- **Authentication:** Instructions on the authentication mechanism required to access the API.
+- **Request Parameters:** A breakdown of required parameters for API calls.
+- **Response Formats:** Sample responses and error handling to aid in development.
+- **Usage Guidelines:** Best practices and code examples for seamless integration.
+Below is the updated proposal document with Sections 9 and 10 added. (Sections 1–8 remain unchanged.)
 ---
 
 ## 5. Invoicing and Pricing Calculation
@@ -143,5 +165,27 @@ For illustration, the following example pricing calculation combines the LHWH, S
   \]
 
 Thus, the combined cost for a delivery using LHWH, SLC, and LSC is **€1.37**.
+
+---
+
+
+## 9. Dynamic Pricing Locker Pricing (DLC) Option
+
+SLC could also be offered as DLC (Dynamic Pricing Locker Pricing). In this option, we can set a dynamic price range from **€0.30 to €1.40**. Our API will outline the locker slots available at the specified price and automatically reject orders that exceed the upper limit, ensuring that only the desired pricing options are offered.
+
+---
+
+## 10. Additional Caveats
+
+- **Locker Stay Duration:**  
+  Lockers are available for a 48-hour period. Any prolongation beyond 48 hours incurs an extra charge of €0.20 per day.
+  
+- **Return to Sender:**  
+  If an order is returned to the sender, an additional cost of €0.50 applies.
+  
+- **Locker Attempt Policy:**  
+  Locker products include one single delivery attempt. If the product fails to fit in the locker, the order will roll down to standard home delivery pricing.
+  
+- **Service Discretion:** **The assignment of a specific locker or latitude/longitude location is at SLM's discretion. Our API reserves the right to reject orders for any reason deemed prudent by SLM.**
 
 ---
