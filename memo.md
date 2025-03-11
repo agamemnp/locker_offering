@@ -1,7 +1,3 @@
-Below is the updated proposal document that includes all previous details along with an example pricing calculation that combines the LHWH, SLC, and LSC components.
-
----
-
 # Pilot Proposal: Athens Hub Injection to Athens Lockers
 
 ## 1. Overview
@@ -149,5 +145,3 @@ For illustration, the following example pricing calculation combines the LHWH, S
 Thus, the combined cost for a delivery using LHWH, SLC, and LSC is **€1.37**.
 
 ---
-
-This comprehensive document outlines the proposed pilot, including all relevant pricing tables, technical requirements, SLAs for locker delivery, the new LHWH component with its discount for Athens-to-Athens deliveries, and an example pricing calculation that combines LHWH, SLC, and LSC. Further discussions will refine the integration details to ensure a successful pilot rollout.
