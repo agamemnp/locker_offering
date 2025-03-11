@@ -171,9 +171,9 @@ Thus, the combined cost for a delivery using LHWH, SLC, and LSC is **€1.37**.
 ---
 
 
-## 9. Dynamic Pricing Locker Pricing (DLC) Option (future work..)
+## 9. Dynamic Locker Pricing (DLC) Option (future work..)
 
-SLC could also be offered as DLC (Dynamic Pricing Locker Pricing). In this option, we can set a dynamic price range from (example: **€0.60 to €1.40**). Our API will outline the locker slots available at the specified price and automatically reject orders that exceed the upper limit set, ensuring that only the desired pricing options are offered.
+SLC could also be offered as DLC (Dynamic Locker Pricing). In this option, we can set a dynamic price range from (example: **€0.60 to €1.40**). Our API will outline the locker slots available at the specified price and automatically reject orders that exceed the upper limit set, ensuring that only the desired pricing options are offered.
 
 ---
 
