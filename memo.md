@@ -16,9 +16,8 @@ Based on the provided pricing structures and service components, we invite you t
 | Component Code | Component Name                      | Dependency         | Description                                                                                                                                                       | Pricing   | Offer                                          |
 |----------------|-------------------------------------|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|------------------------------------------------|
 | PC             | Pickup Cost                         | Pickup Density     | Charge per voucher per order based on pickup effort                                                                                                               | Table 1   | N/A                                            |
-| LHWC           | Network Cost                        | Origin-Destination | Cost based on the route between origin and destination zones                                                                                                      | Table 2   | 40% Discount for hub injection               |
 | LHWH           | Local Hub-to-Hub Delivery           | Athens-to-Athens   | Cost based on the route between local hubs within Athens. A 40% discount is applied for Athens-to-Athens deliveries.                                                  | Table 2   | ✔️ (40% Discount for Athens-to-Athens)         |
-| SLC            | Locker Standard Service             | –                  | Locker delivery with a standard SLA of **1–5 days** from dispatch, with a **guaranteed 1-day** delivery after pickup from the warehouse                          | €0.90     | ✔️                                             |
+| SLC            | Locker Standard Service             | –                  | Locker delivery with a standard SLA of **1–5 days** from warehouse pickup
 | ELC            | Locker Express Service              | –                  | Locker delivery with an express SLA (1 day)                                                                                                                       | €1.80     | ✔️                                             |
 | LSC            | Locker Slot Size Charge             | –                  | Extra cost for the smallest available locker slot                                                                                                                 | Table 3   | ✔️                                             |
 | EHC            | Express Home Delivery               | –                  | Express home delivery service                                                                                                                                       | N/A     | N/A                                            |
@@ -53,6 +52,8 @@ Based on the provided pricing structures and service components, we invite you t
 
 ---
 (dowload zonemap.html for details)
+
+
 ---
 
 ### Table 3: Locker Slot Size Charge
